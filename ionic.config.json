@@ -1,0 +1,7 @@
+{
+  "name": "reactIonicHungryPlants",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
