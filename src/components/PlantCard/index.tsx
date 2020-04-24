@@ -6,22 +6,27 @@ import {
   IonCardTitle,
   IonCardContent,
 } from "@ionic/react";
-import "./style.css";
 
+import "./style.css";
 import Plant from "../../models/Plant";
 
-export const PlantCard = ({ id, name }: Plant) => {
+export const PlantCard = ({
+  id,
+  name,
+  breed,
+  latest_measurement: latestMeasurement
+}: Plant) => {
   return (
-    <IonCard routerLink={`/plant/${id}`}>
+    <IonCard key={id} className="plant-card" routerLink={`/plant/${id}`}>
       <IonCardHeader>
-        <IonCardSubtitle>{id}</IonCardSubtitle>
         <IonCardTitle>{name}</IonCardTitle>
+        <IonCardSubtitle>{breed}</IonCardSubtitle>
+        <span className="card-stat">
+          {Number(latestMeasurement.humidity * 100).toFixed()}%
+        </span>
       </IonCardHeader>
 
       <IonCardContent>
-        Keep close to Nature's heart... and break clear away, once in awhile,
-        and climb a mountain or spend a week in the woods. Wash your spirit
-        clean.
       </IonCardContent>
     </IonCard>
   );

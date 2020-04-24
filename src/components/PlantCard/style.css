@@ -1,0 +1,7 @@
+.card-stat {
+  text-align: right;
+  position: absolute;
+  right: 0.4em;
+  top: 0.4em;
+  font-size: 32px;
+}

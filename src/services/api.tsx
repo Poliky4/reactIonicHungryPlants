@@ -1,9 +1,6 @@
-const API_URL = "http://localhost:1337";
+import Plant from '../models/Plant';
 
-interface Plant {
-  id: string;
-  name: string;
-}
+const API_URL = "http://ubuntu.mansdahlstrom.se:3000";
 
 export const getPlants = async () => {
   const response = await fetch(`${API_URL}/`);

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { IonContent, IonPage, IonText } from "@ionic/react";
+import { IonContent, IonPage, IonText, IonHeader } from "@ionic/react";
 import ExploreContainer from "../../components/ExploreContainer";
 import "./style.css";
 import { RouteComponentProps } from "react-router";
@@ -30,11 +30,11 @@ export const Plant = ({
   return (
     <IonPage>
       <IonContent>
-        <IonText>
-          {plant?.name}
-          ---
-          {plant?.id}
-        </IonText>
+        <h1>{plant?.name}</h1>
+        <p>id: {plant?.id}</p>
+        <pre>
+          {JSON.stringify(plant?.latest_measurement, null, 2)}
+        </pre>
       </IonContent>
     </IonPage>
   );
