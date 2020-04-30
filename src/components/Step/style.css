@@ -1,0 +1,43 @@
+.step {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.step ion-spinner {
+  height: 60px;
+  width: 60px;
+  margin: 20px auto;
+}
+
+.step-indicator {
+  color: #a7a7a7;
+  font-size: 12px;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.step h3 {
+  font-size: 18px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.step .subtitle {
+  font-size: 14px;
+  margin: 0;
+  text-align: left;
+  color: #A7A7A7;
+}
+
+ion-card {
+  background-color: white;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
